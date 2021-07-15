@@ -1,0 +1,651 @@
+/*PENGATURAN DASAR WEB*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2fff7ff;
+}
+
+.kontainer {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*JENDELA SELAMAT DATANG*/
+.kontainer-jendela {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2fff7ff;
+    border-radius: 10px;
+    width: 600px;
+    height: 425px;
+}
+
+#tombol-tutup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00aa44ff;
+    position: fixed;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#tombol-tutup p {
+    margin: 0;
+    padding: 0;
+    color: #f2fff7ff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.kontainer-jendela h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #002b11ff;
+}
+
+.kontainer-jendela figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin: 0 auto 30px auto;
+}
+
+.kontainer-jendela figure img {
+    height: 150px;
+}
+
+.latar-belakang {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*HEADER*/
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #005522ff;
+    background-color: #f2fff7ff;
+}
+
+.judul-website{
+    margin: 15px;
+}
+
+.judul-website img {
+    height: 25px;
+}
+
+.navbar-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    list-style: none;
+} 
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #005522ff;
+    padding: 10px 25px;
+    font-weight: bold;
+} 
+
+.navbar-menu li a:hover {
+    background-color: #005522ff;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+} 
+
+/*MAIN*/
+
+#Beranda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+#Beranda article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 20px;
+} 
+
+#Beranda article h1 {
+    margin: 0 0 20px 0;
+    font-size: 100px;
+    color: #005522ff;
+}
+
+#Beranda article p {
+    margin: 0;
+    font-size: 20px;
+    color: #002b11ff;
+} 
+
+.ilustrasi img {
+    height: 300px;
+    margin: 0 20px 0 0;
+}
+
+#Galeri {
+    width: 100%;
+    padding-top: 60px;
+}
+
+#Galeri article {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+#Galeri article h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    color: #005522ff;
+}
+
+.bingkai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.foto {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 375px;
+    background-color: white;
+}
+
+.foto img {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px 0 25px;
+    background-color: beige;
+}
+
+.foto .caption-gambar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.caption-gambar h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 100px;
+    color: #005522ff;
+    font-size: large;
+}
+
+/*TENTANG-SAYA*/
+
+#Tentang-Saya {
+    width: 100%;
+    padding-top: 60px;
+}
+
+#Tentang-Saya article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px;
+}
+
+#Tentang-Saya article .foto-penulis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 25px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#Tentang-Saya article .foto-penulis img {
+    border-radius: 100%;
+    width: 180px;
+}
+
+#Tentang-Saya article h3 {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #005522ff;
+}
+
+#Tentang-Saya article p {
+    font-size: 20px;
+    color: #002b11ff;
+    text-align: justify;
+}
+
+#Tentang-Saya .kontak {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#Tentang-Saya .kontak .e-mail, #Tentang-Saya .kontak .telepon {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+}
+
+#Tentang-Saya .kontak img {
+    margin: 25px;
+    height: 100px;
+}
+
+#Tentang-Saya .kontak figure figcaption h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #002b11ff;
+}
+
+/*KOMENTAR*/
+
+#saran-komentar {
+    width: 100%;
+}
+
+#saran-komentar article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 0 100px;
+}
+
+#saran-komentar article h3 {
+    font-size: 25px;
+    margin: 50px 0;
+    text-align: center;
+    color: #005522ff;
+}
+
+#saran-komentar article .gambar-komentar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+#saran-komentar article .gambar-komentar img {
+    height: 150px;
+}
+
+#saran-komentar article .masukan-komentar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 150px;
+}
+
+#saran-komentar article .masukan-komentar #komentar {
+    margin: 20px 0;
+    padding: 10px;
+    width: 70%;
+    min-width: 250px;
+    border: 2px solid #00aa44ff;
+    border-radius: 5px;
+    color: #002b11ff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#saran-komentar article .masukan-komentar #submit-komentar {
+    box-sizing: border-box;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #00aa44ff;
+    display: block;
+    box-shadow: 0 6px #005522ff;
+    background-color: #00aa44ff;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#saran-komentar article .masukan-komentar #submit-komentar:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #005522ff;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/*RESPONSIVE WEB*/
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    /*JENDELA SELAMAT DATANG*/
+    .kontainer-jendela {
+        width: 500px;
+        height: 325px;
+    }
+
+    #tombol-tutup {
+        top: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    #tombol-tutup p {
+        font-size: 20px;
+    }
+
+    .kontainer-jendela h1 {
+        font-size: 25px;
+    }
+
+    .kontainer-jendela figure {
+        height: 200px;
+    }
+    
+    .kontainer-jendela figure img {
+        height: 100px;
+    }
+
+    /*BERANDA*/
+    .ilustrasi img {
+        height: 250px;
+    }
+
+    #Beranda article h1 {
+        font-size: 80px;
+    }
+    
+    #Beranda article p {
+        font-size: 17.5px;
+    } 
+
+    /*GALERI*/
+
+    #Galeri article {
+        margin-bottom: 20px;
+    }
+
+    .foto {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /*TENTANG SAYA*/
+    #Tentang-Saya .kontak {
+        display: flex;
+    }
+
+    #Tentang-Saya .kontak .e-mail, #Tentang-Saya .kontak .telepon {
+        margin: 0;
+        width: 180px;
+        height: 140px;
+    }
+    
+    #Tentang-Saya article .kontak{
+        margin-top: 0;
+    }
+    
+    #Tentang-Saya .kontak img {
+        margin: 15px;
+        height: 90px;
+    }
+    
+    #Tentang-Saya .kontak figure figcaption {
+        height: 20px;
+    }
+
+    #Tentang-Saya .kontak figure figcaption h5 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    /*KOMENTAR*/
+    #saran-komentar article .masukan-komentar #komentar {
+        height: 80px;    
+    }
+    
+    #saran-komentar article .masukan-komentar #submit-komentar {
+        height: 40px;
+        width: 140px;
+    }
+    
+    #saran-komentar article .masukan-komentar #submit-komentar:active {
+        top: 5px;
+    }
+
+    /*FOOTER*/
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 600px) {
+    /*JENDELA SELAMAT DATANG*/
+    .kontainer-jendela {
+        width: 300px;
+        height: 225px;
+    }
+
+    #tombol-tutup {
+        top: -10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    #tombol-tutup p {
+        font-size: 15px;
+    }
+
+    .kontainer-jendela h1 {
+        font-size: 15px;
+    }
+
+    .kontainer-jendela figure {
+        height: 100px;
+    }
+    
+    .kontainer-jendela figure img {
+        height: 70px;
+    }
+
+    /*HEADER*/
+    .judul-website {
+        margin: 20px 0 30px 0;
+    }
+
+    .navbar-menu li a {
+        padding: 5px 25px;
+    } 
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-menu li a:hover {
+        padding: 5px 25px;
+    }
+    
+    .navbar-menu {
+        display: flex;
+    }
+
+    /*MAIN*/
+    #Beranda {
+        flex-direction: column;
+    }
+
+    .ilustrasi img {
+        height: 200px;
+    }
+
+    #Beranda article{
+        justify-content: space-between;
+    } 
+
+    #Beranda article h1 {
+        font-size: 70px;
+        margin: 150px 0 30px 0;
+    }
+    
+    #Beranda article p {
+        font-size: 17.5px;
+    } 
+
+    /*GALERI*/
+    #Galeri {
+        padding-top: 20px;
+    }
+
+    #Galeri article h3 {
+        margin: 120px 0 0 0;
+        font-size: 20px;
+    }
+
+    /*TENTANG SAYA*/
+    #Tentang-Saya {
+        padding-top: 10px;
+    }
+
+    #Tentang-Saya article {
+        margin: 120px 0 0 0;
+        font-size: 20px;
+    }
+
+    #Tentang-Saya article h3{
+        margin: 12px 0;
+        font-size: 20px;
+    }
+    
+    #Tentang-Saya article .foto-penulis {
+        margin: 25px auto;
+        width: 180px;
+        height: 180px;
+    }
+    
+    #Tentang-Saya article .foto-penulis img {
+        width: 160px;
+    }
+
+    #Tentang-Saya article p {
+        font-size: 15px;
+        margin-right: 45px;
+        margin-left: 45px;
+    }
+
+    #Tentang-Saya .kontak .e-mail, #Tentang-Saya .kontak .telepon {
+        display: flex;
+        justify-content: space-evenly;
+        width: 180px;
+        height: 120px;
+    }
+    
+    #Tentang-Saya .kontak img {
+        margin: 10px;
+        height: 60px;
+    }
+
+    #Tentang-Saya .kontak figure figcaption h5 {
+        font-size: 13px;
+    }
+
+    /*KOMENTAR*/
+    #saran-komentar article h3 {
+        font-size: 20px;
+    }
+    
+    #saran-komentar article .gambar-komentar {
+        margin-bottom: 10px;
+    }
+
+    #saran-komentar article .gambar-komentar img {
+        height: 130px;
+    }
+    
+    #saran-komentar article .masukan-komentar #komentar {
+        padding: 7px;
+        height: 70px;
+    }
+    
+    #saran-komentar article .masukan-komentar #submit-komentar {
+        height: 35px;
+        width: 95px;
+    }
+    
+    #saran-komentar article .masukan-komentar #submit-komentar:active {
+        top: 5px;
+    }
+}
+
